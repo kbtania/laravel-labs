@@ -1,0 +1,118 @@
+body {
+    background-color: #FAF1E4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu-link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    color: #435334;
+}
+
+h1 {
+    text-align: center;
+    color: #435334;
+}
+
+table {
+    background-color: #cedebd;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #435334;
+    color: #CEDEBD;
+    padding: 10px;
+}
+
+td {
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(186, 201, 168);
+}
+
+.edit-btn {
+    background-color: #435334;
+    color: #cedebd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.delete-btn {
+    background-color: #d67575;
+    color: #cedebd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.details-btn {
+    background-color: rgb(231, 229, 229);
+    color: #435334;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+.alert {
+    margin: 10px auto;
+    text-align: center;
+    color: #435334;
+    font-size: 18px;
+}
+
+/* create new user */
+
+.new-user {
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background-color: #fff;
+    width: fit-content;
+    text-align: center;
+    border-radius: 20px;
+}
+
+input {
+    padding: 10px 15px;
+    border: 1px solid #435334;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.add-user {
+    background-color: #435334;
+    color: #cedebd;
+    cursor: pointer;
+}
+
+/* User Details */
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.profile {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    color: #435334;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+ span {
+     font-weight: bold;
+ }

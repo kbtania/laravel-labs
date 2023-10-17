@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/users.css') }}" />
+    <title>Lab1 | Users</title>
 </head>
 <body>
-    <h1>Users</h1>
-    <div>
+    <nav class="menu">
+        <a class="menu-link" href="/">Homepage</a>
+        <a class="menu-link" href="{{ route('user.create') }}">New User</a>
+    </nav>
+    <h1>Users List</h1>
+    <div class="alert">
         @if(session()->has('success'))
             <div>{{ session('success') }}</div>
         @endif
@@ -27,17 +32,17 @@
             <td>{{ $user->name}}</td>
             <td>{{ $user->email}}</td>
             <td>
-                <a href="{{ route('user.edit', ['user' => $user]) }}">Edit</a>
+                <a class="edit-btn" href="{{ route('user.edit', ['user' => $user]) }}">Edit</a>
             </td>
             <td>
                 <form method="post" action="{{ route('user.destroy', ['user'=>$user]) }}">
                     @csrf
                     @method('delete')
-                    <input type="submit" value="Delete" />
+                    <input class="delete-btn" type="submit" value="Delete" />
                 </form>
             </td>
             <td>
-                <a href="{{ route('user.show', ['user' => $user]) }}">Details</a>
+                <a class="details-btn" href="{{ route('user.show', ['user' => $user]) }}">Details</a>
             </td>
         </tr>
         @endforeach

@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/users.css') }}" />
+    <title>Lab1 | Add New User</title>
 </head>
 <body>
+    <nav class="menu">
+        <a class="menu-link" href="/">Homepage</a>
+        <a class="menu-link" href="{{ route('user.create') }}">New User</a>
+    </nav>
     <h1>Create New User</h1>
     <div>
         @if($errors->any())
@@ -16,6 +21,7 @@
         </ul>
         @endif
     </div>
+    <div class="new-user">
     <form method="post" action="{{ route('user.store') }}">
         @csrf
         @method('post')
@@ -32,8 +38,9 @@
             <input type="password" name="password" placeholder="Enter your password...">
         </div>
         <div>
-            <input type="submit" value="Create New User" />
+            <input class="add-user" type="submit" value="Create New User" />
         </div>
     </form>
+    </div>
 </body>
 </html>
