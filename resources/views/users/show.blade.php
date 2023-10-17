@@ -12,16 +12,6 @@
         <a class="menu-link" href="{{ route('user.create') }}">New User</a>
     </nav>
     <h1>Profile</h1>
-    <!-- <table>
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Date of registration</th>
-    </tr>
-    <tr>
-        <td></td>
-    </tr> -->
     </table>
     <div class="profile">
         <img class="avatar" src="https://png.pngtree.com/png-vector/20221117/ourmid/pngtree-user-flat-design-long-shadow-glyph-icon-default-figure-anonymous-vector-png-image_41304650.jpg" alt="">
