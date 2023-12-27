@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/users.css') }}" />
-    <title>Lab 1 | Edit User </title>
+    @vite('resources/css/app.css')
+    <title>Lab 3 | Edit User </title>
 </head>
 <body>
     <nav class="menu">
-        <a class="menu-link" href="/">Homepage</a>
-        <a class="menu-link" href="{{ route('user.create') }}">New User</a>
+        <a class="menu-link text-3xl font-bold underline" href="/">Homepage</a>
+        <a class="menu-link text-3xl font-bold underline" href="{{ route('user.create') }}">New User</a>
     </nav>
     <h1>Edit User Information</h1>
     <div>
