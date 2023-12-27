@@ -8,7 +8,7 @@
     <title>Lab 2 | Dashboardpage</title>
 </head>
 <body>
-    <div class="welcome-card">
+    <div class="welcome-card bg-yellow-100">
         <h1>Lab 2</h1>
         <h2>CRUD User App</h2>
         <nav class="menu">
