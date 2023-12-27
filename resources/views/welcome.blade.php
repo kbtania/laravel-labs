@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/index.css') }}" />
-    <title>Lab 1 | Homepage</title>
+    <title>Lab 2 | Dashboardpage</title>
 </head>
 <body>
     <div class="welcome-card">
-        <h1>Lab 1</h1>
+        <h1>Lab 2</h1>
         <h2>CRUD User App</h2>
         <nav class="menu">
-            <a class="menu-link" href="{{ route('user.index') }}">List of Users</a>
-            <a class="menu-link" href="{{ route('user.create') }}">Add New User</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
         </nav>
     </div>
 </body>
